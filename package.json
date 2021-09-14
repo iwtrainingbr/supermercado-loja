@@ -1,0 +1,15 @@
+{
+  "name": "projeto-web",
+  "version": "1.0.0",
+  "description": "Projeto criado como conclusão de curso da turma FRONT-08 da iwtraining.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alessandro Feitoza <alessandro@feitoza.tec.br>",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.1.0"
+  }
+}
