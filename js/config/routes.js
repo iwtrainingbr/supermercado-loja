@@ -1,6 +1,6 @@
 const routes = {
   "addCategory": pageAddCategory,
   "listCategories": pageListCategories,
-
-  "listClients": pageListClients, 
+  "newProducts": pageNewProducts,
+  "listClients": pageListClients,
 };
