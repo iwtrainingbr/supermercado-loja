@@ -1,5 +1,5 @@
 function pageListClients() {
-  let data = [0, 1, 2, 3, 4, 5].map(cat => {
+  let data = [0, 1, 2, 3, 4, 5].map(client => {
       return `
         <tr>
           <td>Teste ${cat}</td>
@@ -15,7 +15,7 @@ function pageListClients() {
   }).join('');
 
   return `
-    <h1>Gerenciar Categorias</h1>
+    <h1>Gerenciar Clientes</h1>
     
     <table class="table table-hover table-striped" style="text-align: center;">
       <thead class="table-dark">
