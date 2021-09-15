@@ -6,4 +6,5 @@ const routes = {
   "reports": pageReports,
   "login": pageLogin,
   "addCategory": pageAddCategory,
+  "listCategories": pageListCategories,
 };
