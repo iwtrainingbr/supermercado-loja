@@ -31,15 +31,28 @@
 
     <div id="content" class="card card-body"></div>
 
+    <div id="lightgallery">
+    <a href="img/img1.jpg" data-lg-size="1600-2400">
+        <img alt=".." src="img/thumb1.jpg" />
+    </a>
+    <a href="img/img2.jpg" data-lg-size="1024-800">
+        <img alt=".." src="img/thumb2.jpg" />
+    </a>
+    ...
+</div>
+
     <footer id="footer" class="mt-3 text-end"></footer>
     <!-- Dependencias externas / Bibliotecas -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
     <script src="node_modules/lightgallery/lightgallery.umd.js"></script>
 
     <!-- lightgallery plugins -->
     <script src="node_modules/lightgallery/plugins/thumbnail/lg-thumbnail.umd.js"></script>
     <script src="node_modules/lightgallery/plugins/zoom/lg-zoom.umd.js"></script>
+
+
 
     <!-- Dependencias internas -->
 
@@ -57,5 +70,12 @@
     <script src="js/config/routes.js"></script>
 
     <script src="js/index.js"></script>
+
+    <script type="text/javascript">
+    lightGallery(document.getElementById('lightgallery'), {
+        plugins: [lgZoom, lgThumbnail],
+        speed: 500,
+    });
+</script>
   </body>
 </html>
