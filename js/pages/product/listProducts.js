@@ -1,8 +1,10 @@
 function pageListProducts() {
-  let data = [0, 1, 2, 3, 4, 5].map(prod => {
+  let data = [0, 1, 2, 3, 4, 5,6,7,8,9].map(prod => {
       return `
         <tr>
           <td>Teste ${prod}</td>
+          <td>Teste</td>
+          <td>Teste</td>
           <td>Teste</td>
           <td>Teste</td>
           <td>Teste</td>
@@ -20,10 +22,12 @@ function pageListProducts() {
     <table class="table table-hover table-striped">
       <thead class="table-dark">
         <tr>
-          <th>Nome</th>
-          <th>Referência</th>
           <th>Foto</th>
-          <th>Descrição</th>
+          <th>Nome</th>
+          <th>Categoria</th>
+          <th>Valor</th>
+          <th>Quantidade</th>
+          <th>Validade</th>
           <th>Ações</th>
         </tr>
       </thead>
