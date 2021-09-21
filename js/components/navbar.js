@@ -6,6 +6,6 @@ function componentNavbar() {
       <button data-component="menu" value="listClients" class="btn btn-outline-dark">Listar Clientes</button>
       <button data-component="menu" value="newProducts" class="btn btn-outline-dark">Novo Produto</button>
       <button data-component="menu" value="addClient" class="btn btn-outline-dark">Novo Cliente</button>
-
+      <button data-component="menu" value="listProducts" class="btn btn-outline-dark">produtos</button>
   `;
 }

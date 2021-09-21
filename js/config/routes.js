@@ -5,4 +5,5 @@ const routes = {
   "listClients": pageListClients,
   "addClient": pageAddClient,
   "dashboard": pageDashboard,
+  "listProducts": pageListProducts,
 };
