@@ -1,9 +1,9 @@
 const routes = {
-  "addCategory": pageAddCategory,
-  "listCategories": pageListCategories,
-  "newProducts": pageNewProducts,
+  "dashboard": pageDashboard,
   "listClients": pageListClients,
   "addClient": pageAddClient,
-  "dashboard": pageDashboard,
+  "listCategories": pageListCategories,
+  "addCategory": pageAddCategory,
   "listProducts": pageListProducts,
-};
+  "addProduct": pageAddProduct,
+  };
