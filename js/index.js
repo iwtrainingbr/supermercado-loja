@@ -1,5 +1,7 @@
 document.getElementById('navbar').innerHTML = componentNavbar();
 
+document.getElementById('footer').innerHTML = componentFooter()
+
 document.querySelectorAll('[data-component="menu"]').forEach(item => {
   item.addEventListener('click', () => {
 
