@@ -4,4 +4,6 @@ const routes = {
   "newProducts": pageNewProducts,
   "listClients": pageListClients,
   "addClient": pageAddClient,
+  "dashboard": pageDashboard,
+  "listProducts": pageListProducts,
 };
