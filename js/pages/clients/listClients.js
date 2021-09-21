@@ -2,7 +2,7 @@ function pageListClients() {
   let data = [0, 1, 2, 3, 4, 5].map(client => {
       return `
         <tr>
-          <td>Teste ${cat}</td>
+          <td>Teste ${client}</td>
           <td>Teste</td>
           <td>Teste</td>
           <td>Teste</td>
@@ -16,7 +16,7 @@ function pageListClients() {
 
   return `
     <h1>Gerenciar Clientes</h1>
-    
+
     <table class="table table-hover table-striped" style="text-align: center;">
       <thead class="table-dark">
         <tr>
