@@ -1,3 +1,16 @@
 body {
   background-color: #DEDEDE;
 }
+
+  .icone-footer {
+  border:1px solid white;
+  border-radius:30px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  }
+
+  .icone-footer-img {
+  width: 50px;
+
+}
