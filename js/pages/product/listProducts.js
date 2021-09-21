@@ -4,7 +4,7 @@ function pageListProducts() {
         <tr>
           <td>Teste ${prod}</td>
           <td>Teste</td>
-          <td>Teste</td>
+          <td>teste</td>
           <td>Teste</td>
           <td>Teste</td>
           <td>Teste</td>
