@@ -7,4 +7,6 @@ const routes = {
   "login": pageLogin,
   "addCategory": pageAddCategory,
   "listCategories": pageListCategories,
+
+  "listClients": pageListClients, 
 };

@@ -8,5 +8,7 @@ function componentNavbar() {
       <button data-component="menu" value="login" class="btn btn-outline-dark">Entrar</button>
       <button data-component="menu" value="addCategory" class="btn btn-outline-dark">Nova Categoria</button>
       <button data-component="menu" value="listCategories" class="btn btn-outline-dark">Categorias</button>
+      <button data-component="menu" value="listClients" class="btn btn-outline-dark">Listar Clientes</button>
+
   `;
 }
