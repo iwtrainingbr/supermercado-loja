@@ -10,15 +10,30 @@ document.querySelectorAll('[data-component="menu"]').forEach(item => {
     document.title = item.innerHTML;
 
     resetMenu();
-    item.classList.remove('btn-outline-dark');
-    item.classList.add('btn-dark');
 
-    document.getElementById('content').innerHTML = routes[item.value]();
+    if (item.hasAttribute('data-menu-item')) {
+      let dataMenuItem = item.getAttribute('data-menu-item');
+
+      document.querySelector(`[data-menu-group="${dataMenuItem}"]`).classList.remove('btn-outline-dark');
+      document.querySelector(`[data-menu-group="${dataMenuItem}"]`).classList.add('btn-dark');
+    } else {
+      item.classList.remove('btn-outline-dark');
+      item.classList.add('btn-dark');
+    }
+
+    let action = item.getAttribute('data-action');
+
+    document.getElementById('content').innerHTML = routes[action]();
   });
 });
 
 function resetMenu() {
   document.querySelectorAll('[data-component="menu"]').forEach(item => {
+    item.classList.remove('btn-dark');
+    item.classList.add('btn-outline-dark');
+  });
+
+  document.querySelectorAll('[data-bs-toggle="dropdown"]').forEach(item => {
     item.classList.remove('btn-dark');
     item.classList.add('btn-outline-dark');
   });
