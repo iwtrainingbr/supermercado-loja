@@ -4,7 +4,10 @@ function pageListCategories() {
         <tr>
           <td>Teste ${cat}</td>
           <td>Teste</td>
-          <td><img src="http://minaspetro.com.br/blog/wp-content/uploads/2019/12/original-3fac0b90b8781220623bed8c8225bb65-591x400.jpg" width=60 height=40></td>
+          <td>
+            <a href="http://minaspetro.com.br/blog/wp-content/uploads/2019/12/original-3fac0b90b8781220623bed8c8225bb65-591x400.jpg" data-lightbox="image-1" data-title="Teste ${cat}">
+              <img src="http://minaspetro.com.br/blog/wp-content/uploads/2019/12/original-3fac0b90b8781220623bed8c8225bb65-591x400.jpg" width="60" height="40">
+            </a>
           <td>Teste</td>
           <td>
             <button class="btn btn-warning btn-sm">Editar</button>

@@ -3,11 +3,9 @@ function pageListProducts() {
       return `
         <tr>
           <td>
-            <div data-component="lightgallery">
-              <a href="https://www.drogariaminasbrasil.com.br/media/product/a70/sabao-em-po-tixan-primavera-500g-050.jpg" data-lg-size="1600-2400">
-                <img src="https://www.drogariaminasbrasil.com.br/media/product/a70/sabao-em-po-tixan-primavera-500g-050.jpg"width=60 height=40>
-              </a>
-            </div>
+            <a href="https://www.drogariaminasbrasil.com.br/media/product/a70/sabao-em-po-tixan-primavera-500g-050.jpg" data-lightbox="image-1" data-title="Teste ${prod}">
+              <img src="https://www.drogariaminasbrasil.com.br/media/product/a70/sabao-em-po-tixan-primavera-500g-050.jpg" width="60" height="40">
+            </a>
           </td>
           <td>Teste ${prod}</td>
           <td>teste</td>
@@ -42,11 +40,5 @@ function pageListProducts() {
       </tbody>
     </table>
 
-    <script type="text/javascript">
-      lightGallery(document.querySelector('[data-component="lightgallery"]'), {
-          plugins: [lgZoom, lgThumbnail],
-          speed: 500,
-      });
-    </script>
   `;
 }
