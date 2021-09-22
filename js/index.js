@@ -1,3 +1,5 @@
+document.getElementById('content').innerHTML = pageDashboard();
+
 document.getElementById('navbar').innerHTML = componentNavbar();
 
 document.getElementById('footer').innerHTML = componentFooter()
