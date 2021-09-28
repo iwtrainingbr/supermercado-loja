@@ -1,18 +1,28 @@
+
 function pageListClients() {
-  let data = [0, 1, 2, 3, 4, 5].map(client => {
-      return `
+  let url = 'https://supermercado-front-08-default-rtdb.firebaseio.com/clients.json';
+
+  fetch(url)
+    .then(response => response.json())
+    .then(clients => {
+      const TABLE_CLIENTS = document.getElementById('table-clients');
+
+      for (let id in clients) {
+      TABLE_CLIENTS.innerHTML += `
         <tr>
-          <td>Teste ${client}</td>
-          <td>Teste</td>
-          <td>Teste</td>
-          <td>Teste</td>
+          <td>${clients[id].cpf}</td>
+           <td>${clients[id].name}</td>
+          <td>${clients[id].phone}</td>
+          <td>${clients[id].address}</td>
+        
           <td>
             <button class="btn btn-warning btn-sm">Editar</button>
             <button class="btn btn-danger btn-sm">Excluir</button>
           </td>
         </tr>
       `;
-  }).join('');
+    }
+  });
 
   return `
     <h1>Gerenciar Clientes</h1>
@@ -27,8 +37,7 @@ function pageListClients() {
           <th>Ações</th>
         </tr>
       </thead>
-      <tbody>
-        ${data}
+      <tbody id="table-clients">
       </tbody>
     </table>
   `;
