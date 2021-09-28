@@ -6,4 +6,5 @@ const routes = {
   "addCategory": pageAddCategory,
   "listProducts": pageListProducts,
   "addProduct": pageAddProduct,
+  "addVehicle": pageAddVehicle,
   };
