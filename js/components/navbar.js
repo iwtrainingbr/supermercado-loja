@@ -3,6 +3,14 @@ function componentNavbar() {
       <div class="btn-group">
         <button data-component="menu" data-action="dashboard" class="btn btn-outline-dark">Dashboard</button>
 
+        <button type="button" data-menu-group="vehicles" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Veiculos
+        </button>
+        <ul class="dropdown-menu">
+          <li><a data-component="menu" data-menu-item="vehicles" data-action="addVehicle" class="dropdown-item" href="#">Novo</a></li>
+          <li><a data-component="menu" data-menu-item="vehicles" data-action="listVehicles" class="dropdown-item" href="#">Listar</a></li>
+        </ul>
+
         <button type="button" data-menu-group="clients" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           Clientes
         </button>
