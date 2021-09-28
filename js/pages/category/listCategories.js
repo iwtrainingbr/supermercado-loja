@@ -39,8 +39,6 @@ function pageListCategories() {
           <th>Foto</th>
           <th>Descrição</th>
           <th>Ações</th>
-          <th>Preço</th>
-
         </tr>
       </thead>
       <tbody id="table-categories">

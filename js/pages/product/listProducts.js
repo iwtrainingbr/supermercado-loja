@@ -12,7 +12,7 @@ function pageListProducts() {
           <td>Teste</td>
           <td>Teste</td>
           <td>Teste</td>
-          <td>
+          <td>Teste</td>
             <button class="btn btn-warning btn-sm">Editar</button>
             <button class="btn btn-danger btn-sm">Excluir</button>
           </td>

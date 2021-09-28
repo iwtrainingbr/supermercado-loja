@@ -1,8 +1,29 @@
+function saveCategory () {
+  event.preventDefault();
+
+  let newCategory = {
+    name: document.getElementById('category_name').value,
+    image: document.getElementById('category_photo').value,
+    description: document.getElementById('category_description').value,
+    reference: document.getElementById('category_reference').value
+  };
+
+  let url = 'https://supermercado-front-08-default-rtdb.firebaseio.com/categories.json';
+
+  fetch(url, {
+    method: 'POST',
+    body: JSON.stringify(newCategory),
+  });
+
+  alert('Nova categoria cadastrado')
+
+}
+
 function pageAddCategory() {
   return `
     <h1>Nova Categoria</h1>
 
-    <form>
+    <form onsubmit="saveCategory()">
       <label for="category_name">Nome</label>
       <input class="form-control mb-3" id="category_name" required placeholder="Digite aqui">
 
@@ -14,9 +35,6 @@ function pageAddCategory() {
 
       <label for="category_description">Descrição</label>
       <textarea class="form-control mb-3" id="category_description" required placeholder="Digite aqui"></textarea>
-
-      <label for="category_price">Preço</label>
-      <input class="form-control mb-3" id="category_price" required placeholder="Digite Valor R$">
 
       <button class="btn btn-primary">ENVIAR</button>
 
