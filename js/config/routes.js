@@ -7,4 +7,5 @@ const routes = {
   "listProducts": pageListProducts,
   "addProduct": pageAddProduct,
   "addVehicle": pageAddVehicle,
+  "listVehicles": pageListVehicles,
   };
