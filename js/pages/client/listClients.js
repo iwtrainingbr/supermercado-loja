@@ -11,10 +11,10 @@ function pageListClients() {
       TABLE_CLIENTS.innerHTML += `
         <tr>
           <td>${clients[id].cpf}</td>
-           <td>${clients[id].name}</td>
+          <td>${clients[id].name}</td>
           <td>${clients[id].phone}</td>
           <td>${clients[id].address}</td>
-        
+
           <td>
             <button class="btn btn-warning btn-sm">Editar</button>
             <button class="btn btn-danger btn-sm">Excluir</button>
