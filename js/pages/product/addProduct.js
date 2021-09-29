@@ -11,6 +11,7 @@ function saveProduct () {
     quantity: document.getElementById('product_quantity').value,
     description: document.getElementById('product_description').value,
     image: document.getElementById('product_image').value,
+    category: document.getElementById('product_category').value,
 
   };
 
@@ -56,6 +57,9 @@ function pageAddProduct() {
 
     <label for="product_description">Descrição</label>
     <textarea class="form-control mb-3" id="product_description" required placeholder="Digite aqui"></textarea>
+
+    <label for="product_category">Categoria</label>
+    <input class="form-control mb-3" id="product_name" type="text" required placeholder="Ex:Nome da categoria">
 
     <button class="btn btn-primary">CADASTRAR</button>
 
