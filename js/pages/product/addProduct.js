@@ -34,7 +34,7 @@ function pageAddProduct() {
     <input class="form-control mb-3" id="product_name" type="text" required placeholder="Ex:Nome do produto">
 
     <label for="product_image">Imagem</label>
-    <input class="form-control mb-3" id="product_image" type="file" required>
+    <input class="form-control mb-3" id="product_image" type="text" required>
 
     <label for="product_value">Valor</label>
     <input class="form-control mb-3" id="product_value" required placeholder="R$">
