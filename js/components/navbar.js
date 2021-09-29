@@ -1,7 +1,7 @@
 function componentNavbar() {
   return `
       <div class="btn-group">
-        <button data-component="menu" data-action="dashboard" class="btn btn-outline-dark">Dashboard</button>
+        <button data-component="menu" data-action="dashboard" class="btn btn-dark">Dashboard</button>
 
         <button type="button" data-menu-group="vehicles" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           Veiculos
