@@ -15,7 +15,7 @@ function saveClient () {
     body: JSON.stringify(newClient),
   });
 
-  alert('Novo veiculo cadastrado')
+  alert('Novo cliente cadastrado')
 }
 
 
