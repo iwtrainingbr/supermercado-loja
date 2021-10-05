@@ -34,6 +34,15 @@ function componentNavbar() {
           <li><a data-component="menu" data-menu-item="products" data-action="addProduct" class="dropdown-item" href="#">Nova</a></li>
           <li><a data-component="menu" data-menu-item="products" data-action="listProducts" class="dropdown-item" href="#">Listar</a></li>
         </ul>
+
+        <button type="button" data-menu-group="deliveryman" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Entregadores
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a data-component="menu" data-menu-item="deliveryman" data-action="addDeliveryman" class="dropdown-item" href="#">Nova</a></li>
+          <li><a data-component="menu" data-menu-item="deliveryman" data-action="listDeliveryman" class="dropdown-item" href="#">Listar</a></li>
+        </ul>
       </div>
     `;
 }

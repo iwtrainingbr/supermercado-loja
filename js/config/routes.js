@@ -8,4 +8,6 @@ const routes = {
   "addProduct": pageAddProduct,
   "addVehicle": pageAddVehicle,
   "listVehicles": pageListVehicles,
+  "listDeliveryman": pageListDeliveryman,
+
   };
