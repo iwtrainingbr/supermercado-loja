@@ -39,7 +39,7 @@ function pageAddClient (){
   <input class="form-control mb-3" id="name" required placeholder="Ex:João Maria">
 
   <label for="cpf">CPF</label>
-  <input class="form-control mb-3" id="cpf" type="text" required placeholder="Ex: 000.000.000-00">
+  <input onchange="(event)=> {console.log(event)}" class="form-control mb-3" id="cpf" type="text" required placeholder="Ex: 000.000.000-00">
 
   <label for="phone"> Telefone </label>
   <input class="form-control mb-3" id="phone" type="text" required placeholder="Ex: (00) 90000-0000"
