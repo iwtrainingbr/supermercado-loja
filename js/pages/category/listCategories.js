@@ -1,3 +1,16 @@
+function removeCategory(id) {
+  let url = `https://supermercado-front-08-default-rtdb.firebaseio.com/categories/${id}.json`;
+  if (false === confirm('Você tem certeza que deseja excluir?') ) {
+    return;
+  }
+
+  fetch(url, {method: 'DELETE'})
+  .then(response => pageListCategories());
+
+
+
+}
+
 function pageListCategories() {
     let url = 'https://supermercado-front-08-default-rtdb.firebaseio.com/categories.json';
 
@@ -6,6 +19,7 @@ function pageListCategories() {
       .then(categories => {
         const TABLE_CATEGORIES = document.getElementById('table-categories');
 
+        TABLE_CATEGORIES.innerHTML = '';
 
         for (let id in categories) {
           TABLE_CATEGORIES.innerHTML += `
@@ -21,7 +35,7 @@ function pageListCategories() {
               <td>${categories[id].description}</td>
               <td>
                 <button class="btn btn-warning btn-sm">Editar</button>
-                <button class="btn btn-danger btn-sm">Excluir</button>
+                <button onclick="removeCategory('${id}')" class="btn btn-danger btn-sm">Excluir</button>
               </td>
             </tr>
           `;
