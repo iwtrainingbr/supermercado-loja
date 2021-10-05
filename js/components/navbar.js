@@ -1,6 +1,11 @@
 function componentNavbar() {
   return `
-      <div class="btn-group">
+
+      <div class="col-2">
+        <img src="imagens/mercado-todo-dia-logo.png" width="150px" class="text-left">
+      </div>
+
+      <div class="btn-group col-10">
         <button data-component="menu" data-action="dashboard" class="btn btn-dark">Dashboard</button>
 
         <button type="button" data-menu-group="vehicles" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
