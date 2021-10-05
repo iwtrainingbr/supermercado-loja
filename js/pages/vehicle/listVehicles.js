@@ -1,3 +1,17 @@
+function removeVehicle(id) {
+  if ( false === confirm('Você tem certeza?') ) {
+    return;
+  }
+
+  let url = `https://supermercado-front-08-default-rtdb.firebaseio.com/vehicles/${id}.json`;
+
+  fetch(url, {
+    method: 'DELETE'
+  });
+
+  pageListVehicles();
+}
+
 function pageListVehicles() {
   let url = 'https://supermercado-front-08-default-rtdb.firebaseio.com/vehicles.json';
 
@@ -5,6 +19,8 @@ function pageListVehicles() {
     .then(response => response.json())
     .then(vehicles => {
       const TABLE_VEHICLES = document.getElementById('table-vehicles');
+
+      TABLE_VEHICLES.innerHTML = '';
 
       for (let id in vehicles) {
         TABLE_VEHICLES.innerHTML += `
@@ -14,7 +30,7 @@ function pageListVehicles() {
             <td>${vehicles[id].model}</td>
             <td>
               <button class="btn btn-warning btn-sm">Editar</button>
-              <button class="btn btn-danger btn-sm">Excluir</button>
+              <button onclick="removeVehicle('${id}')" class="btn btn-danger btn-sm">Excluir</button>
             </td>
           </tr>
         `;
