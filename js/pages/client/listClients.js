@@ -1,3 +1,6 @@
+(document).ready( function () {
+    ('table-clients').DataTable();
+} );
 
 function pageListClients() {
   let url = 'https://supermercado-front-08-default-rtdb.firebaseio.com/clients.json';
@@ -27,7 +30,7 @@ function pageListClients() {
   return `
     <h1>Gerenciar Clientes</h1>
 
-    <table class="table table-hover table-striped" style="text-align: center;">
+    <table class="table table-hover table-striped" style="text-align: center;" id="table-clients">
       <thead class="table-dark">
         <tr>
           <th>CPF</th>
