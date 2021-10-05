@@ -34,13 +34,18 @@ function pageListVehicles() {
             </td>
           </tr>
         `;
+
+        $(document).ready( function () {
+            $('#table-vehicles-db').DataTable();
+        } );
+
       }
     });
 
   return `
     <h1>Gerenciar Veiculos</h1>
 
-    <table class="table table-hover table-striped" style="text-align: center;">
+    <table class="table table-hover table-striped" style="text-align: center;" id="table-vehicles-db">
       <thead class="table-dark">
         <tr>
           <th>Placa</th>

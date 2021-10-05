@@ -4,7 +4,8 @@ function pageListProducts() {
   fetch(url)
     .then(response => response.json())
     .then(products => {
-      const TABLE_PRODUCTS = document.getElementById('table-products');
+      const TABLE_PRODUCTS = document.getElementById('table-products-db');
+
       for (let id in products){
 
         TABLE_PRODUCTS.innerHTML += `
@@ -24,14 +25,22 @@ function pageListProducts() {
           </td>
 
         </tr>
-        `
-      }
-    })
+      `;
+    }
+
+    $(document).ready( function () {
+      $('#table-products').DataTable();
+    } );
+
+  })
+
+
 
 
   return `
     <h1>Gerenciar Produtos</h1>
-    <table class="table table-hover table-striped">
+
+    <table class="table table-hover table-striped" id="table-products">
       <thead class="table-dark">
         <tr>
           <th>Foto</th>
@@ -43,7 +52,7 @@ function pageListProducts() {
           <th>Ações</th>
         </tr>
       </thead>
-      <tbody id="table-products">
+      <tbody id="table-products-db">
       </tbody>
     </table>
   `;

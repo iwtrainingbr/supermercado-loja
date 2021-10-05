@@ -39,13 +39,17 @@ function pageListCategories() {
               </td>
             </tr>
           `;
+
+          $(document).ready( function () {
+              $('#table-categories-db').DataTable();
+          } );
         }
       });
 
   return `
     <h1>Gerenciar Categorias</h1>
 
-    <table class="table table-hover table-striped">
+    <table class="table table-hover table-striped" id="table-categories-db">
       <thead class="table-dark">
         <tr>
           <th>Nome</th>

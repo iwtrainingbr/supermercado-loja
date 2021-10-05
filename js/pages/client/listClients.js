@@ -1,6 +1,4 @@
-(document).ready( function () {
-    ('table-clients').DataTable();
-} );
+
 
 function pageListClients() {
   let url = 'https://supermercado-front-08-default-rtdb.firebaseio.com/clients.json';
@@ -8,7 +6,7 @@ function pageListClients() {
   fetch(url)
     .then(response => response.json())
     .then(clients => {
-      const TABLE_CLIENTS = document.getElementById('table-clients');
+      const TABLE_CLIENTS = document.getElementById('table-clients-data');
 
       for (let id in clients) {
       TABLE_CLIENTS.innerHTML += `
@@ -24,6 +22,10 @@ function pageListClients() {
           </td>
         </tr>
       `;
+
+      $(document).ready( function () {
+          $('#table-clients').DataTable();
+      } );
     }
   });
 
@@ -40,7 +42,7 @@ function pageListClients() {
           <th>Ações</th>
         </tr>
       </thead>
-      <tbody id="table-clients">
+      <tbody id="table-clients-data">
       </tbody>
     </table>
   `;
